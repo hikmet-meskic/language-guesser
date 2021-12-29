@@ -8,7 +8,7 @@ import colors from 'colors';
 
 // Passing argument to franc function to get ISO guessed language
 const ISOlanguage = franc(myArg, { minLength: 5 });
-console.log(franc("Nisi dobro to uradio"));
+
 if (ISOlanguage === 'und') {
     // Display error when it couldn't find appropriate language
     console.error('Sorry, could not figure it out! Try with more sample text.'.red)
