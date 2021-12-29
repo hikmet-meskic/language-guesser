@@ -1,2 +1,7 @@
-const myArgs = process.argv[2];
-console.log('myArgs: ', myArgs);
+const myArg = process.argv[2];
+
+import { franc } from 'franc';
+
+const guessedLanguage = franc(myArg);
+
+console.log(`Guessed language: ${guessedLanguage}`);
