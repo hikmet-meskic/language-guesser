@@ -1,7 +1,11 @@
 const myArg = process.argv[2];
 
 import { franc } from 'franc';
+import langs from 'langs';
 
-const guessedLanguage = franc(myArg);
+const ISOlanguage = franc(myArg);
 
-console.log(`Guessed language: ${guessedLanguage}`);
+const guessedLanguage = langs.where("3", ISOlanguage);
+
+
+console.log(`Guessed language: ${guessedLanguage.name}`);
